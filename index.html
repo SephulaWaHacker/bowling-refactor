@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<style>
+	input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}#roll{margin-left:5px;margin-right:2px}
+	</style>
+</head>
+<body>
+	<h1 style="background-color: #000; color:#fff;">Mega Ten Pin Bowling</h1>
+	<form id="nameForm">
+		<input type="string" id="name" name="" placeholder="Write name here" required>
+		<input type="button" id="btn" onclick="game.createPlayer()"  value="Add Player">
+		<p id="err" style="color:#f00;"></p>
+	</form>
+	<div id="gameover"></div>
+	<div id="gameUI"></div>
+	<div id="leaderboard"></div>
+<script src="bowling.js"></script>
+<script>
+	document.getElementById("name").focus();
+    document.getElementById("name").value = "";
+</script>
+</body>
+</html>
